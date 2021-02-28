@@ -1,32 +1,25 @@
-.blue {
-    color: blue;
-    text-align: center;
-    padding-right: 80px;
-    font-size: 21px;
+body {
+background: #E8E8EE;
 }
-.forma {
-    font-family: "Times New Roman";
+.block {
+    display: inline;
+    width: 50;
+	height: 50;
+    border: 1px solid #066B80;
+    background-color: #F0D4E5;
+    padding: 10px 0px;
     font-size: 16px;
-    color: Navy;
-    vertical-align: center;
-}
-
-.form {
-    background: LightCyan;
+    cursor: pointer;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: 3px;
+	margin-top: 3px; 
 }
-button {
-    background-color: rgb(205, 255, 213);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: indigo;
-    border-color: indigo;
-    font-size: 16px;
-
-}
-hr {
-    height: 2px;
-    background-color: purple;
-    padding-right: 80px;
+.wrapper {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 400px;
+	height: 270px;
+	background: url(fon.jpg);
+	border: 3px solid #949493;
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
