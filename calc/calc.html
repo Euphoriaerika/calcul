@@ -1,0 +1,75 @@
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Statistic</title>
+    <link rel="stylesheet" href="calc.css" type="text/css">
+</head>
+
+<body>
+<br>
+    <div class="div">
+        <form action="" method="POST">
+            <fieldset style="width:50px;" class="form">
+                <span class="forma">Имя:<br><textarea rows="1" cols="20" name="name"></textarea> <br> </span>
+                <span class="forma">E-mail<br>(для отправки ответа):<br><textarea rows="1" cols="20" name="email"></textarea> <br> </span>
+                <span class="forma">Отзыв (пожелание):<br><textarea rows="10" cols="20" name="comment" required></textarea><br></span>
+                <br>
+                <input type="submit" name="ok" value="Отправить сообщение">
+            </fieldset>
+        </form>
+    </div>
+    <p></p>
+    </p>
+	 
+    <button onclick="document.getElementById('Bodya').value += 1"> 1</button>
+    <button onclick="document.getElementById('Bodya').value += 2"> 2</button>
+    <button onclick="document.getElementById('Bodya').value += 3"> 3</button>
+    <button onclick="document.getElementById('Bodya').value += 4"> 4</button>
+    <button onclick="document.getElementById('Bodya').value += 5"> 5</button>
+    <button onclick="document.getElementById('Bodya').value += 6"> 6</button>
+    <button onclick="document.getElementById('Bodya').value += 7"> 7</button>
+    <button onclick="document.getElementById('Bodya').value += 8"> 8</button>
+    <button onclick="document.getElementById('Bodya').value += 9"> 9</button>
+    <button onclick="document.getElementById('Bodya').value += 0"> 0</button>
+    <button onclick="document.getElementById('Bodya').value += '+'"> +</button>
+    <button onclick="document.getElementById('Bodya').value += '-'"> -</button>
+    <button onclick="document.getElementById('Bodya').value += '*'"> *</button>
+    <button onclick="document.getElementById('Bodya').value += '/'"> /</button>
+    <button onclick="document.getElementById('Bodya').value = ''"> clear</button>
+    <button onclick="backSpace();"> del </button>
+
+    <br><br><input id="Bodya" placeholder="Здесь будет число" onkeydown="return false;">
+    <br> <br>
+    <button onclick="BodyaSkazalNadoException();">=</button>
+
+    <script>
+        function BodyaSkazalNadoException() {
+            
+            Bodya_value = document.getElementById('Bodya').value.replace('--', '+').replace('++', '+');
+           
+            try {
+                Bodya_value = eval(Bodya_value);
+               
+            } catch (e) {
+                // alert('hi');
+                console.log(`Error: ${e}`);
+                alert('Ты лох, нормально вводи')
+                Bodya_value = '';
+               
+            }
+            finally{
+                document.getElementById('Bodya').value = Bodya_value;
+
+            }
+        
+        }
+    </script>
+    <!-- <div id="res">Ваш результат:<br></div> -->
+	<script>
+            function backSpace() {
+                var bsp = document.getElementById('Bodya').value;
+                document.getElementById('Bodya').value=bsp.substring(0,bsp.length -1);
+            }
+       </script>
+</body>

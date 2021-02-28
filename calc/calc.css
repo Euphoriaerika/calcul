@@ -1,0 +1,32 @@
+.blue {
+    color: blue;
+    text-align: center;
+    padding-right: 80px;
+    font-size: 21px;
+}
+.forma {
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: Navy;
+    vertical-align: center;
+}
+
+.form {
+    background: LightCyan;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+button {
+    background-color: rgb(205, 255, 213);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: indigo;
+    border-color: indigo;
+    font-size: 16px;
+
+}
+hr {
+    height: 2px;
+    background-color: purple;
+    padding-right: 80px;
+}
