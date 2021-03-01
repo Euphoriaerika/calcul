@@ -1,25 +1,80 @@
 body {
-background: #E8E8EE;
+	/*пользователь не может ставить курсор*/
+	user-select: none;
+	/*цвет фона*/
+	background: #E8E8EE;
 }
+/*кнопка*/
 .block {
+	/*настройки текста и его расположения*/
+	font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    text-align: center;
+	padding: 10px 0px;
+	/*ставлю руку с пальцем как новый указатель мыши*/
+    cursor: pointer;
+	/*обькты идут влинию*/
     display: inline;
+	/*ширина\высота*/
     width: 50;
 	height: 50;
+	/*делаю границу*/
     border: 1px solid #066B80;
+	/*цвет фона*/
     background-color: #F0D4E5;
-    padding: 10px 0px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
+	/*отступы между обьектами*/
 	margin-left: 3px;
 	margin-top: 3px; 
 }
+/*окно калькулятора*/
 .wrapper {
-	margin: 0 auto;
+	/*расположение объекта в центре*/
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	/*тип объекта(у нас, если выйти за границу, данне не отображаются)*/
 	overflow: hidden;
+	/*ширина\высота*/
 	width: 400px;
 	height: 270px;
-	background: url(fon.jpg);
+	/*настройка границы и теней*/
 	border: 3px solid #949493;
 	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+/*строка результата*/
+.result{
+	/*настройки текста*/
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	/*ставлю стандартный указатель мыши при наведении*/
+	cursor: default;
+	/*ширина\высота*/
+	width: 222;
+	height: 30;
+	/*убираю границу*/
+	border: none;
+	/*отступ влево*/
+	margin-left: 3px;
+	/*цвет фона*/
+	background-color: rgba(0, 0, 255, .2);
+}
+/*наше равно*/
+.getResult {
+	/*настройки текста*/
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	/*ширина\высота*/
+	width: 30;
+	height: 30;
+	/*убираю границу*/
+	border: none;
+	/*цвет фона*/
+	background-color: rgba(0, 0, 255, .2);
+}
+/*это чтоб ккнопка темнела при наведении*/
+#color:hover {
+  background:#E3C8D8;
 }

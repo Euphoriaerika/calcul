@@ -1,35 +1,35 @@
-<html lang="ru">
+<html lang="ua">
 
 <head>
     <meta charset="utf-8">
-    <title>Statistic</title>
+    <title>calculator</title>
     <link rel="stylesheet" href="calc.css" type="text/css">
 </head>
 
 <body>
 <br>
 <form name="calc" class="wrapper">
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 1"> 1</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 2"> 2</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 3"> 3</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += '+'"> +</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 1"> 1</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 2"> 2</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 3"> 3</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += '+'"> +</button>
 <br>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 4"> 4</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 5"> 5</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 6"> 6</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += '-'"> -</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 4"> 4</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 5"> 5</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 6"> 6</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += '-'"> -</button>
 <br>	
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 7"> 7</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 8"> 8</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 9"> 9</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += '*'"> *</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 7"> 7</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 8"> 8</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 9"> 9</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += '*'"> *</button>
 <br>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += 0"> 0</button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value = ''"> clear</button>
-    <button type="button" class="block" onclick="backSpace();"> del </button>
-    <button type="button" class="block" onclick="document.getElementById('Bodya').value += '/'"> /</button>
-	<br><br><input id="Bodya" placeholder="Здесь будет число" onkeydown="return false;">
-    <button onclick="BodyaSkazalNadoException();">=</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += 0"> 0</button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value = ''"> clear</button>
+    <button type="button" id = "color" class="block" onclick="backSpace();"> del </button>
+    <button type="button" id = "color" class="block" onclick="document.getElementById('Bodya').value += '/'"> /</button>
+	<br><br><input type="text" class="result" id="Bodya" onkeydown="return false;">
+    <button type="button" class="getResult" onclick="BodyaSkazalNadoException();">=</button>
 </form>
 	<!--Исключение, чтобы не было пакостных входных данных-->
     <script>
@@ -39,11 +39,11 @@
            
             try {
                 Bodya_value = eval(Bodya_value);
+				event.preventDefault();
                
             } catch (e) {
-                // alert('hi');
                 console.log(`Error: ${e}`);
-                alert('Ты лох, нормально вводи');
+                alert('ошибка ввода♡');
                 Bodya_value = '';
                
             }
