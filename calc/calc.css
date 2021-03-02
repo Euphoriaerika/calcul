@@ -38,7 +38,7 @@ body {
 	/*тип объекта(у нас, если выйти за границу, данне не отображаются)*/
 	overflow: hidden;
 	/*ширина\высота*/
-	width: 400px;
+	width: 370px;
 	height: 270px;
 	/*настройка границы и теней*/
 	border: 3px solid #949493;
@@ -75,6 +75,6 @@ body {
 	background-color: rgba(0, 0, 255, .2);
 }
 /*это чтоб ккнопка темнела при наведении*/
-#color:hover {
-  background:#E3C8D8;
+.block:hover {
+	background:#E3C8D8;
 }
