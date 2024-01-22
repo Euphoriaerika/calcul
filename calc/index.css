@@ -1,34 +1,41 @@
+:root {
+  --bg-color: #ffe4d6;
+  --btn-color: #facbea;
+  --border-color: #d988b9;
+  --text-color: #b0578d;
+}
+
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-	background-color: #E8E8EE;
+body {
+  background-color: var(--bg-color);
 }
 
-.circle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	background-color: #fff;
-	border-radius: 50%;
-	animation-name: start-use;
-	animation-duration: 4s;
-	animation-delay: 1s;
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--btn-color);
+  border-radius: 50%;
+  animation-name: start-use;
+  animation-duration: 4s;
+  animation-delay: 1s;
 }
 
-@keyframes start-use{
-	0%{
-		width: 50px;
-		height: 50px;
-	}
-	50%{
-	background-color: rgba(0, 0, 255, .2);
-	}
-	100%{
-		background-color: #F0D4E5;
-		width: 170px;
-		height: 170px; 
-	}
+@keyframes start-use {
+  0% {
+    width: 50px;
+    height: 50px;
+  }
+  50% {
+    background-color: var(--text-color);
+  }
+  100% {
+    background-color: var(--border-color);
+    width: 170px;
+    height: 170px;
+  }
 }
