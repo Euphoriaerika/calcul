@@ -1,70 +1,89 @@
+:root{
+	--btn-color: #FACBEA;
+	--bg-color: #FFE4D6;
+	--border-color: #D988B9;
+	--text-color: #B0578D;
+}
+
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  font-family: "Times New Roman", serif;
+  color: var(--text-color);
 }
 
 html {
-    font-size: 62.5%;
-  }
+  font-size: 62.5%;
+}
 
-body{
-	user-select: none;
-	background-color: #E8E8EE;
-    font-family: "Times New Roman", serif;
+body {
+  user-select: none;
+  background-color: var(--bg-color);
+}
+
+button{
+	font-size: 1.6rem;
+	cursor: pointer;
+	width: 5.2rem;
+	height: 5.2rem;
 }
 
 .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	width: 400px;
-	height: 320px;
-	/*настройка границы и теней*/
-	border: 3px solid #949493;
-	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.2rem solid var(--border-color);
+  box-shadow: 0.8rem 0.8rem var(--border-color);
+  padding: 2rem;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.left-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.right-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  align-items: center;
 }
 
 .btn {
-    font-size: 1.6rem;
-	padding: 10px 0px;
-    cursor: pointer;
-    width: 5.2rem;
-	height: 5.2rem;
-    border: 1px solid #066B80;
-    background-color: #F0D4E5;
-    margin: 0.4rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--btn-color);
 }
 .btn:hover {
-	background:#E3C8D8;
+  background: #e3c8d8;
 }
 
-/*строка результата*/
-.result{
-	/*настройки текста*/
-	font-family: "Times New Roman", Times, serif;
-	font-size: 14px;
-	/*ставлю стандартный указатель мыши при наведении*/
-	cursor: default;
-	/*ширина\высота*/
-	width: 222;
-	height: 30;
-	/*убираю границу*/
-	border: none;
-	/*отступ влево*/
-	margin-left: 3px;
-	/*цвет фона*/
-	background-color: rgba(0, 0, 255, .2);
+.bottom-section{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
 }
-/*наше равно*/
-.getResult {
-	/*настройки текста*/
-	font-family: "Times New Roman", Times, serif;
-	font-size: 14px;
-	/*ширина\высота*/
-	width: 30;
-	height: 30;
-	/*убираю границу*/
-	border: none;
-	/*цвет фона*/
-	background-color: rgba(0, 0, 255, .2);
+
+.result {
+  font-size: 1.6rem;
+  cursor: default;
+  width: 36.4rem;
+  height: 5.2rem;
+  border: none;
+  background-color: var(--btn-color);
+  padding: 0.8rem;
+}
+
+.btn-res {
+  background-color: var(--btn-color);
+  border: none;
 }

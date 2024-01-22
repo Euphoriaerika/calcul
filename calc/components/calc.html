@@ -10,214 +10,216 @@
 
   <body>
     <form name="calc" class="wrapper">
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 1"
-      >
-        1
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 2"
-      >
-        2
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 3"
-      >
-        3
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += '+'"
-      >
-        +
-      </button>
-      <button type="button" class="btn" onclick="showTrigonometry()">T</button>
-      <button
-        id="sin"
-        style="display: inline"
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 'sin('"
-      >
-        sin
-      </button>
-      <button
-        id="sqrt"
-        style="display: none"
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 'sqrt('"
-      >
-        √
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 4"
-      >
-        4
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 5"
-      >
-        5
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 6"
-      >
-        6
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += '-'"
-      >
-        -
-      </button>
-      <button type="button" class="btn" onclick="showMath()">M</button>
-      <button
-        id="cos"
-        style="display: inline"
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 'cos('"
-      >
-        cos
-      </button>
-      <button
-        id="^"
-        style="display: none"
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += '^'"
-      >
-        ^
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 7"
-      >
-        7
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 8"
-      >
-        8
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 9"
-      >
-        9
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += '*'"
-      >
-        *
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += ')'"
-      >
-        )
-      </button>
-      <button
-        id="tan"
-        style="display: inline"
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 'tan('"
-      >
-        tan
-      </button>
-      <button
-        id="pi"
-        style="display: none"
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 'π'"
-      >
-        π
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 0"
-      >
-        0
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value = ''"
-      >
-        clear
-      </button>
-      <button type="button" class="btn" onclick="backSpace();">del</button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += '/'"
-      >
-        /
-      </button>
-      <button
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += '('"
-      >
-        (
-      </button>
-      <button
-        id="ctg"
-        style="display: inline"
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 'ctg('"
-      >
-        ctg
-      </button>
-      <button
-        id="e"
-        style="display: none"
-        type="button"
-        class="btn"
-        onclick="document.getElementById('Bodya').value += 'e'"
-      >
-        e
-      </button>
-
-      <input
-        type="text"
-        class="result"
-        id="Bodya"
-        onkeydown="return false;"
-      />
-      <button
-        type="button"
-        class="getResult"
-        onclick="BodyaSkazavTrebaException();"
-      >
-        =
-      </button>
+      <section class="top-section">
+        <div class="left-section">
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 1"
+          >
+            1
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 2"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 3"
+          >
+            3
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += '+'"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 4"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 5"
+          >
+            5
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 6"
+          >
+            6
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += '-'"
+          >
+            -
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 7"
+          >
+            7
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 8"
+          >
+            8
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 9"
+          >
+            9
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += '*'"
+          >
+            *
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 0"
+          >
+            0
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value = ''"
+          >
+            clear
+          </button>
+          <button type="button" class="btn" onclick="backSpace();">del</button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += '/'"
+          >
+            /
+          </button>
+        </div>
+        <div class="right-section">
+          <button type="button" class="btn" onclick="showTrigonometry()">
+            T
+          </button>
+          <button
+            id="sin"
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 'sin('"
+          >
+            sin
+          </button>
+          <button
+            id="sqrt"
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 'sqrt('"
+          >
+            √
+          </button>
+          <button type="button" class="btn" onclick="showMath()">M</button>
+          <button
+            id="cos"
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 'cos('"
+          >
+            cos
+          </button>
+          <button
+            id="^"
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += '^'"
+          >
+            ^
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += ')'"
+          >
+            )
+          </button>
+          <button
+            id="tan"
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 'tan('"
+          >
+            tan
+          </button>
+          <button
+            id="pi"
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 'π'"
+          >
+            π
+          </button>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += '('"
+          >
+            (
+          </button>
+          <button
+            id="ctg"
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 'ctg('"
+          >
+            ctg
+          </button>
+          <button
+            id="e"
+            type="button"
+            class="btn"
+            onclick="document.getElementById('Bodya').value += 'e'"
+          >
+            e
+          </button>
+        </div>
+      </section>
+      <section class="bottom-section">
+        <input
+          type="text"
+          class="result"
+          id="Bodya"
+          onkeydown="return false;"
+          disabled
+        />
+        <button
+          type="button"
+          class="btn-res"
+          onclick="BodyaSkazavTrebaException();"
+        >
+          =
+        </button>
+      </section>
     </form>
   </body>
 </html>
