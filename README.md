@@ -1,20 +1,20 @@
-# Калькулятор на JavaScript
+# JavaScript Calculator
 
-Це моя застаріла реалізація калькулятора, яка використовує `eval` для обчислень. Його не рекомендовано використовувати через його потенційні загрози безпеці. Головний акцент цього проекту приділяється візуальному оформленню.
+This is my outdated implementation of a calculator that uses eval for calculations. It is not recommended to use it due to its potential security threats. The main focus of this project is on visual styling.
 
-## Функціонал
+## Functionality
 
-Даний калькулятор підтримує наступні дії: додавання, віднімання, множення, ділення, тригонометричні функції та алгебраїчні, для перемиканням між ними створені кнопки "T" і "A" відповідно.
+This calculator supports the following operations: addition, subtraction, multiplication, division, trigonometric functions, and algebraic functions. Buttons "T" and "A" are created for switching between them.
 
-Також ви можете переключати тему між світлою та темною, змінюючи колірну палітру сайту. Для застосування своєї кольорової палітри просто змініть значення в селекторі `:root` та `.dark-theme`.
+You can also switch between light and dark themes, changing the color palette of the site. To apply your color palette, simply modify the values in the :root and .dark-theme selectors.
 
-Сайт має просту анімацію у вигляді кола, яке з'являється при запуску.
+The site has a simple animation in the form of a circle that appears on launch.
 
-## Скріншоти
+## Screenshots
 
 ![Світла тема](./screanshot/light.png)
 ![Темна тема](./screanshot/dark.png)
 
-## Зв'язок
+## Contact
 
-Для зв'язку або з питань щодо цього проекту ви можете звертатися за посиланням на [мій LinkedIn](https://www.linkedin.com/in/bohdan-rudenko-b5726928a/).
+For inquiries or questions regarding this project, feel free to reach out to me on [my LinkedIn](https://www.linkedin.com/in/bohdan-rudenko-b5726928a/).
