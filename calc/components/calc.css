@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+  }
+
+body{
+	user-select: none;
+	background-color: #E8E8EE;
+    font-family: "Times New Roman", serif;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 400px;
+	height: 320px;
+	/*настройка границы и теней*/
+	border: 3px solid #949493;
+	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.btn {
+    font-size: 1.6rem;
+	padding: 10px 0px;
+    cursor: pointer;
+    width: 5.2rem;
+	height: 5.2rem;
+    border: 1px solid #066B80;
+    background-color: #F0D4E5;
+    margin: 0.4rem;
+}
+.btn:hover {
+	background:#E3C8D8;
+}
+
+/*строка результата*/
+.result{
+	/*настройки текста*/
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	/*ставлю стандартный указатель мыши при наведении*/
+	cursor: default;
+	/*ширина\высота*/
+	width: 222;
+	height: 30;
+	/*убираю границу*/
+	border: none;
+	/*отступ влево*/
+	margin-left: 3px;
+	/*цвет фона*/
+	background-color: rgba(0, 0, 255, .2);
+}
+/*наше равно*/
+.getResult {
+	/*настройки текста*/
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	/*ширина\высота*/
+	width: 30;
+	height: 30;
+	/*убираю границу*/
+	border: none;
+	/*цвет фона*/
+	background-color: rgba(0, 0, 255, .2);
+}
