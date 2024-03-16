@@ -7,14 +7,15 @@
 
 .dark-theme {
   --bg-color: #030637;
-  --btn-color: #3C0753;
+  --btn-color: #3c0753;
   --border-color: #720455;
-  --text-color: #910A67;
+  --text-color: #910a67;
 }
 
 * {
   box-sizing: border-box;
   /*border: 1px solid black;*/
+
   font-family: "Times New Roman", serif;
   color: var(--text-color);
   font-size: 1.6rem;
@@ -25,14 +26,14 @@ html {
 }
 
 body {
-  user-select: none;
   background-color: var(--bg-color);
+  user-select: none;
 }
 
 button {
-  cursor: pointer;
   width: 5.2rem;
   height: 5.2rem;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -40,8 +41,10 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   border: 0.2rem solid var(--border-color);
   box-shadow: 0.8rem 0.8rem var(--border-color);
+
   padding: 2rem;
 }
 
@@ -67,14 +70,14 @@ button {
 }
 
 .btn {
-  border: 1px solid var(--border-color);
   background-color: var(--btn-color);
+  border: 1px solid var(--border-color);
 }
 .btn:hover {
-  background: #e3c8d8;
+  background-color: #e3c8d8;
 }
 
-.hiden{
+.hidden {
   display: none;
 }
 
@@ -85,12 +88,13 @@ button {
 }
 
 .result {
-  cursor: default;
+  background-color: var(--btn-color);
+  border: none;
   width: 30.4rem;
   height: 5.2rem;
-  border: none;
-  background-color: var(--btn-color);
   padding: 0.8rem;
+
+  cursor: default;
 }
 
 .btn-res {
@@ -99,31 +103,31 @@ button {
 }
 
 .btn-slider {
-  position: absolute;
-  top: 4vw;
-  right: 4vw;
   background-color: var(--btn-color);
   width: 8rem;
   height: 4rem;
   border-radius: 8rem;
+
+  position: absolute;
+  top: 4vw;
+  right: 4vw;
+
   cursor: pointer;
 }
 
 .btn-slider::before {
-  position: absolute;
-  content: "";
   background-color: var(--text-color);
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 8rem;
   margin: 0.4rem;
+
+  position: absolute;
+  content: "";
+
   transition: 0.2s;
 }
 
 input:checked + .btn-slider::before {
   transform: translate(4rem);
-}
-
-#check {
-  display: none;
 }
