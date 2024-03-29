@@ -4,19 +4,202 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pretty calculator</title>
-    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="scene">
-        <div class="circle"></div>
+    <!-- ANIMATION -->
+    <div class="circle"></div>
+
+    <main id="calc-page" class="hidden">
+      <!-- SLIDER -->
+      <div id="slider">
+        <input type="checkbox" id="check" class="hidden" />
+        <label for="check" class="btn-slider"></label>
       </div>
-    </div>
-    <script defer>
-      setTimeout(
-        () => (document.location.href = "./components/calc.html"),
-        4500
-      );
-    </script>
+
+      <!-- CALCULATOR -->
+      <div class="calc-wrapper">
+        <section class="top-s">
+          <div class="top-l-s">
+            <input
+              type="button"
+              class="btn"
+              value="1"
+              onclick="appendToDisplay('1')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="2"
+              onclick="appendToDisplay('2')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="3"
+              onclick="appendToDisplay('3')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="+"
+              onclick="appendToDisplay('+')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="4"
+              onclick="appendToDisplay('4')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="5"
+              onclick="appendToDisplay('5')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="6"
+              onclick="appendToDisplay('6')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="-"
+              onclick="appendToDisplay('-')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="7"
+              onclick="appendToDisplay('7')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="8"
+              onclick="appendToDisplay('8')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="9"
+              onclick="appendToDisplay('9')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="*"
+              onclick="appendToDisplay('*')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="0"
+              onclick="appendToDisplay('0')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="AC"
+              onclick="clearDisplay()"
+            />
+            <input type="button" class="btn" value="C" onclick="backSpace()" />
+            <input
+              type="button"
+              class="btn"
+              value="/"
+              onclick="appendToDisplay('/')"
+            />
+          </div>
+          <div class="top-r-s">
+            <input
+              type="button"
+              class="btn"
+              value="T"
+              id="swap-btn"
+              onclick="swapOp()"
+            />
+            <input
+              type="button"
+              class="btn swap"
+              value="sin"
+              onclick="appendToDisplay('sin(')"
+            />
+            <input
+              type="button"
+              class="btn swap hidden"
+              value="√"
+              onclick="appendToDisplay('sqrt(')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="("
+              onclick="appendToDisplay('(')"
+            />
+            <input
+              type="button"
+              class="btn swap"
+              value="cos"
+              onclick="appendToDisplay('cos(')"
+            />
+            <input
+              type="button"
+              class="btn swap hidden"
+              value="^"
+              onclick="appendToDisplay('^')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value=")"
+              onclick="appendToDisplay(')')"
+            />
+            <input
+              type="button"
+              class="btn swap"
+              value="tan"
+              onclick="appendToDisplay('tan(')"
+            />
+            <input
+              type="button"
+              class="btn swap hidden"
+              value="π"
+              onclick="appendToDisplay('π')"
+            />
+            <input
+              type="button"
+              class="btn"
+              value="."
+              onclick="appendToDisplay('.')"
+            />
+            <input
+              type="button"
+              class="btn swap"
+              value="ctg"
+              onclick="appendToDisplay('ctg(')"
+            />
+            <input
+              type="button"
+              class="btn swap hidden"
+              value="e"
+              onclick="appendToDisplay('e')"
+            />
+          </div>
+        </section>
+        <section class="bottom-s">
+          <input type="text" class="result" id="display" disabled />
+          <input
+            type="button"
+            class="btn btn-res"
+            value="="
+            onclick="calculate()"
+          />
+        </section>
+      </div>
+    </main>
+    <script src="./app.js"></script>
   </body>
 </html>
