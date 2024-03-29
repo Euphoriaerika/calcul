@@ -7,7 +7,7 @@ check.onclick = () => {
 setTimeout(() => {
   document.querySelector(".circle").classList.add("hidden");
   document.getElementById("calc-page").classList.remove("hidden");
-}, 4500);
+}, 0);
 
 // function to swap operation
 const swapOp = () => {
@@ -37,4 +37,28 @@ const backSpace = () => {
   document.getElementById("display").value = document
     .getElementById("display")
     .value.slice(0, -1);
+};
+
+// function to calculate the expression
+const calculate = () => {
+  const expression = document
+    .getElementById("display")
+    .value.replace("--", "+")
+    .replace("++", "+")
+    .replace("sin(", "Math.sin(")
+    .replace("cos(", "Math.cos(")
+    .replace("tan(", "Math.tan(")
+    .replace("sqrt(", "Math.sqrt(")
+    .replace("^", "**")
+    .replace("π", "Math.PI")
+    .replace("e", "Math.E");
+
+  var result = "";
+  try {
+    result = eval(expression);
+  } catch (e) {
+    alert(`Error: ${e}`);
+  } finally {
+    document.getElementById("display").value = result;
+  }
 };
