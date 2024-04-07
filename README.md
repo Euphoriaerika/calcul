@@ -1,6 +1,6 @@
 # JavaScript Calculator
 
-This is my outdated implementation of a calculator that uses eval for calculations. It is not recommended to use it due to its potential security threats. The main focus of this project is on visual styling.
+This is an updated version of my calculator implementation, now utilizing reverse Polish notation for expression evaluation instead of eval(). This change enhances security by eliminating potential vulnerabilities associated with using eval().
 
 ## Functionality
 
@@ -12,9 +12,9 @@ The site has a simple animation in the form of a circle that appears on launch.
 
 ## Screenshots
 
-![Світла тема](./screanshot/light.png)
-![Темна тема](./screanshot/dark.png)
+![Bright theme](./screanshot/light.png)
+![Dark theme](./screanshot/dark.png)
 
 ## Contact
 
-For inquiries or questions regarding this project, feel free to reach out to me on [my LinkedIn](https://www.linkedin.com/in/bohdan-rudenko-b5726928a/).
+For inquiries or questions regarding this project, feel free to reach out to me on [my LinkedIn](https://www.linkedin.com/in/b-r-rudenko/).
